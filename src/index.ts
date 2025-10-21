@@ -15,8 +15,6 @@ app.use(express.json());
 
 // Routes
 app.use('/', stringRoutes);
-app.use('/api', stringRoutes);
-
 
 // Health check
 app.get('/health', (req, res) => {

@@ -47,7 +47,7 @@ npm start
 
 ### Base URL
 - Local: `http://localhost:3000/`
-- Production: `https://your-app.up.railway.app/`
+- Production: `https://your-production-url/`
 
 ### Endpoints
 
