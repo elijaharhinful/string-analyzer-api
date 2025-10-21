@@ -46,16 +46,16 @@ npm start
 ## API Endpoints
 
 ### Base URL
-- Local: `http://localhost:3000/api`
-- Production: `https://your-app.up.railway.app/api`
+- Local: `http://localhost:3000/`
+- Production: `https://your-app.up.railway.app/`
 
 ### Endpoints
 
-**POST /strings** - Create/analyze string
-**GET /strings/:string_value** - Get specific string
-**GET /strings** - Get all strings with filters
-**GET /strings/filter-by-natural-language** - Natural language filtering
-**DELETE /strings/:string_value** - Delete string
+- **POST /strings** - Create/analyze string
+- **GET /strings/:string_value** - Get specific string
+- **GET /strings** - Get all strings with filters
+- **GET /strings/filter-by-natural-language** - Natural language filtering
+- **DELETE /strings/:string_value** - Delete string
 
 ## Environment Variables
 - `PORT` - Server port (default: 3000)
@@ -65,17 +65,17 @@ npm start
 
 Create string:
 ```bash
-curl -X POST http://localhost:3000/api/strings \
+curl -X POST http://localhost:3000/strings \
   -H "Content-Type: application/json" \
   -d '{"value":"hello world"}'
 ```
 
 Filter palindromes:
 ```bash
-curl "http://localhost:3000/api/strings?is_palindrome=true"
+curl "http://localhost:3000/strings?is_palindrome=true"
 ```
 
 Natural language query:
 ```bash
-curl "http://localhost:3000/api/strings/filter-by-natural-language?query=single%20word%20palindromes"
+curl "http://localhost:3000/strings/filter-by-natural-language?query=single%20word%20palindromes"
 ```
